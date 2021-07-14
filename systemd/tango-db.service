@@ -1,0 +1,15 @@
+# /usr/local/lib/systemd/system/tango-db.service
+[Unit]
+Description = Tango DB
+Requires=mysql.service
+After=mysql.service
+
+[Service]
+Type=simple
+User=tango
+Group=tango
+ExecStart=/usr/lib/tango/DataBaseds 2 -ORBendPoint giop:tcp:0.0.0.0:10000
+ExecStartPost=/bin/sleep 10
+
+[Install]
+WantedBy=tango.target

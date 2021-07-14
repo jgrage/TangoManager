@@ -1,0 +1,9 @@
+# /usr/local/lib/systemd/system/tango.target
+[Unit]
+Description=Tango Control System target
+Requires=tango-db.service
+Wants=ValveController@controllino.service PfeifferTPG361@pfeiffer1.service PfeifferTPG361@pfeiffer2.service PfeifferTPG361@pfeiffer3.service PfeifferTPG361@pfeiffer4.service
+After=tango-db.service
+
+[Install]
+WantedBy=multi-user.target

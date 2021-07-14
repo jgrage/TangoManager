@@ -1,0 +1,2 @@
+Place your server config files here.
+The name of each config file must match the instance name: ${INSTANCE_NAME}.conf

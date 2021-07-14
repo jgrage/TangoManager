@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+"""Easy to use manager for configuring and registering tango device servers"""
+
+__author__ = "Jonas Grage"
+__copyright__ = "Copyright 2020"
+__license__ = "GPLv3"
+__version__ = "1.0"
+__maintainer__ = "Jonas Grage"
+__email__ = "grage@physik.tu-berlin.de"
+__status__ = "Production"
+
 import os
 import sys
 import errno
